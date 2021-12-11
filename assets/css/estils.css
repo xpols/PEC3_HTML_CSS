@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+:root {
+    --text-color-dark: rgb(0, 0, 0);
+    --text-color-dark-hover: rgb(0, 0, 0, 0.5);
+    --text-color-white: rgb(255, 255, 255);
+    --color-contrast: rgb(189, 55, 0);
+    --bg-main: rgb(244, 244, 244);
+    --bg-form: rgb(242, 232, 228);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color-dark);
+    margin: 0;
+}
+
+#cabecera h1 {
+    text-align: center;
+    color: var(--text-color-dark);
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#cabecera h1 a{
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+
+#cabecera h3 {
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 100;
+    color: var(--text-color-dark);
+    margin-top: 4rem;
+}
+
+#lista-menu li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#lista-menu li a{
+    color: var(--text-color-dark);
+    text-decoration: none;
+}
+
+#lista-menu li a:hover{
+    color: var(--text-color-dark-hover);
+}
+
+#lista-menu li .selected{
+    color: var(--color-contrast);
+}
+
+footer {
+    background-color: var(--text-color-dark);
+    color: var(--text-color-white);
+    text-align: center;
+    margin-top: -20px;
+}
+
+#footer-list {
+    padding: 6rem 0 3rem; 
+}
+
+#footer-list, #rrss-list{
+    padding-inline-start: 0;
+}
+
+#footer-list li{
+    list-style-type: none;
+    text-align: center;
+}
+
+#footer-list li a, #rrss-list li a {
+    text-decoration: none;
+    color: var(--text-color-white);
+}
+
+#footer-list li a:hover {
+    color: var(--color-contrast);
+}
+
+#rrss-list li a:hover {
+    opacity: .7;
+}
+
+#rrss-list li {
+    list-style-type: none;
+}
+
+#rrss-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rrss-list img {
+    height: 70px;
+}
+
+footer p { 
+    padding: 2rem 3rem;
+    line-height: 3.5rem;
+    margin: 0;
+}
+
+#que-es-heroe {
+    max-height: 35vh;
+}
+
+#heroe-block {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#heroe-block #que-es-heroe-title {
+    color: var(--text-color-white);
+    position: absolute;
+    top: 0%;
+    left: 5vw;
+    font-size: 6rem;
+    width: 90vw;
+    font-weight: 100;
+    transform: translate(0, 5vh);
+}
+
+#que-es h3, #noticies h3, #subscripcio h3, #simptomes h3, #videos h3, #cop26 h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+#que-es p {
+    margin: 40px;
+    line-height: 3rem;
+}
+
+#noticies img, #simptomes img {
+    width: 100%;
+}
+
+#noticies figcaption {
+    font-size: .9rem;
+    margin-top: 30px;
+}
+
+#noticies h4, #noticies p, #noticies .read-more {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#noticies .news-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#noticies .read-more, #simptomes .read-more {
+    border-bottom: 1px dotted var(--color-contrast);
+}
+
+#noticies .news-title, #noticies .read-more, #simptomes .read-more {
+    text-decoration: none;
+    color: var(--color-contrast);
+}
+
+#noticies .news-title:hover, #noticies .read-more:hover, #simptomes .read-more:hover {
+    color: var(--text-color-dark);
+}
+
+#noticies p, #noticies .read-more, #simptomes p, #simptomes .read-more {
+    font-size: .85rem;
+}
+
+#noticies article {
+    margin-bottom: 4rem;
+}
+
+#subscripcio {
+    background-color: var(--bg-form);
+    padding: 0 5rem 7rem;
+}
+
+#subscripcio h3 {
+    padding-top: 6rem;
+}
+
+#subscripcio .form-input {
+    display: flex;
+}
+
+#subscripcio .input-text {
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid gray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-link {
+    text-decoration: none;
+    color: var(--color-contrast);
+}
+
+.text-link:hover {
+    color: var(--text-color-dark);
+}
+
+#subscripcio .form-info {
+    font-size: .6rem;
+    line-height: .75rem;
+}
+
+#subscripcio #optin-block {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+#subscripcio #optin{
+    transform: scale(2);
+}
+
+#subscripcio .optin {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+#subscripcio button {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    background-color: var(--color-contrast);
+    color: var(--text-color-white);
+    border: none;
+    margin-top: 2rem;
+    font-weight: normal;
+}
+
+#subscripcio button:hover {
+    background-color: var(--text-color-dark);
+    color: var(--text-color-white);
+}
+
+#simptomes, #videos, #cop26 {
+    background-color: var(--bg-main);
+    padding-top: 1rem;
+    margin-top: 4rem;
+}
+
+#simptomes h3, #videos h3 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#simptomes h4 {
+    font-weight: 600;
+}
+
+#simptomes .read-more {
+    font-weight: 600;
+}
+
+#simptomes-block article{
+    background-color: var(--text-color-white);
+    margin: 40px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#simptomes-block  {
+    padding-bottom: 10rem;
+}
+
+#simptomes-block article figure {
+    margin: 0;
+}
+
+#videos-block article{
+    margin-bottom: 4rem;
+}
+
+#videos-block figure {
+    background-color: var(--text-color-white);
+}
+
+#videos-block iframe {
+    width: 100%;
+    min-height: 500px;
+    border: none;
+}
+
+#videos-block figcaption {
+    font-size: .75rem;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--text-color-white);
+}
+
+#cop26 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#cop26-block img {
+    width: 100%;
+}
+
+#cop26-block h4 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 5rem;
+}
+
+#cop26-block h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#cop26-block p {
+    font-size: 1.25rem;
+    line-height: 3rem;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#cop26 .read-more {
+    text-decoration: none;
+    color: var(--color-contrast);
+}
+
+#cop26 .read-more:hover {
+    color: var(--text-color-dark);
+}
+
+#cop26-2 ol {
+    padding-inline-start: 6rem;
+}
+
+#cop26-2 ol li {
+    margin-bottom: 4rem;
+}
+
+#cop26-block blockquote {
+    margin: 0;
+    background: var(--text-color-white);
+    padding: 3rem 2rem;
+    border-left: 6px solid var(--color-contrast);
+    font-style: italic;
+    margin-bottom: 5rem;
+}
+
+#cop26-block blockquote footer{
+    color: var(--text-color-dark);
+    background: unset;
+    font-style: italic;
+    font-weight: 600;
+    text-align: start;
+}
+
+#cop26-block blockquote:nth-child(2){
+    margin-bottom: 10rem;
+}
+
+.notShow {
+    display: none;
+}
+
+@media (min-width: 1024px) { 
+    #cabecera {
+        margin: 0 15%;
+    }
+
+    #cabecera h1 {
+        text-align: unset;
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+
+    #cabecera h3 {
+        text-align: unset;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    #lista-menu {
+        display: flex;
+        padding: 0;
+    }
+
+    #lista-menu li {
+        font-size: .75rem;
+    }
+
+    #lista-menu li:nth-child(2) {
+        margin: 0 1rem;
+    }
+
+    #heroe-block {
+        max-height: 25vh;
+    }
+
+    #que-es-heroe {
+        max-height: unset;
+        width: 100%;
+    }
+
+    #heroe-block #que-es-heroe-title {
+        margin: 0 15%;
+        left: 0;
+        width: unset;
+        font-size: 3rem;
+        transform: translate(0, 6vh);
+    }
+
+    #que-es h3, #noticies h3, #subscripcio h3, #que-es p {
+        margin: 0 15%;
+        font-size: 1.5rem;
+    }
+
+    #que-es h3 {
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #que-es p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #news-block {
+        display: flex;
+        margin: 0 15%;
+    }
+
+    #news-block figure {
+        margin: 0;
+    }
+
+    #news-block article {
+        width: 30%;
+    }
+
+    #news-block article:nth-child(2) {
+        margin: 0 4.5%;
+    }
+
+    #noticies .news-title {
+        font-size: 1rem;
+    }
+
+    #noticies h3{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #noticies figcaption {
+        margin-top: 10px;
+    }
+
+    #noticies h4, #noticies p, #noticies .read-more, #simptomes p, #simptomes .read-more {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #subscripcio h3 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #subscripcio {
+        padding: 0 15rem 3rem;
+    }
+
+    #subscripcio form {
+        padding: 0 10rem;
+    }
+
+    #subscripcio .input-text {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    #subscripcio #optin {
+        transform: scale(1);
+    }
+
+    #subscripcio .optin {
+        font-size: .6rem;
+        margin-left: 0px;
+    }
+
+    #subscripcio #optin-block {
+        margin-top: 1rem;
+    }
+
+    #subscripcio button {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 0 15%;
+    }
+
+    #footer-list {
+        display: flex;
+        padding: 1.5rem 0 0rem;
+    }
+
+    #rrss-list {
+        justify-content: start;
+    }
+
+    footer p {
+        padding: 0;
+        line-height: 1rem;
+        margin: 0;
+        text-align: start;
+        font-size: .75rem;
+        padding-bottom: 2rem;
+    }
+
+    #footer-list li {
+        margin-right: 1rem;
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: .75rem;
+    }
+
+    #footer-list li:nth-child(1) {
+        list-style-type: none;
+    }
+
+    #rrss-list img {
+        height: 20px;
+    }
+
+    #simptomes {
+        margin-top: 0;
+        padding: 0.5rem 15%;
+    }
+
+    #simptomes h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    #simptomes-block {
+        padding-bottom: 0;
+    }
+
+    #simptomes-block article {
+        width: 66%;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 40px 0;
+    }
+
+    #simptomes-block article:nth-child(2), #simptomes-block article:nth-child(4) {
+        margin-left: 34%;
+    }
+
+    #simptomes-block article figure {
+        width: 50%;
+    }
+
+    #simptomes-block article .simptoma-detaill {
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    #simptomes h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #simptomes-block article {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #simptomes p {
+        margin-top: 0.25rem;
+    }
+
+    #videos {
+        margin-top: 0;
+        padding: 0 15%;
+        min-height: 80vh;
+    }
+
+    #videos h3 {
+        font-size: 1.5rem;
+        margin: 0 0 2rem;
+        padding-top: 2rem;
+    }
+
+    #videos article figure {
+        margin: 0;
+    }
+
+    #videos-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #videos-block article {
+        width: 47.5%;
+    }
+
+    #videos-block article:nth-child(1), #videos-block article:nth-child(3) {
+        margin-right: 2.5%;
+    }
+
+    #videos-block article:nth-child(2), #videos-block article:nth-child(4) {
+        margin-left: 2.5%;
+    }
+
+    #videos-block iframe {
+        min-height: 220px;
+    }
+
+    #videos-block figcaption {
+        padding: 1rem 0;
+    }
+
+    #videos-block article {
+        margin-bottom: 2rem;
+    }
+
+    #cop26-block {
+        padding: 0 15%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #cop26 {
+        margin-top: 0;
+    }
+
+    #cop26-block article {
+        width: 47.5%;
+    }
+
+    #cop26-block article:nth-child(1) {
+        margin-right: 5%;
+    }
+
+    #cop26 h3 {
+        font-size: 1.5rem;
+        margin: 0 0 2rem;
+        padding-top: 2rem;
+    }
+
+    #cop26-block h4 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-top: 0rem;
+    }
+
+    #cop26-block p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    #cop26-1 figure {
+        margin-inline-start: 0;
+    }
+
+    #cop26-2 ol {
+        padding-inline-start: 2rem;
+    }
+
+    #cop26-2 ol li {
+        margin-bottom: 1rem;
+    }
+
+    #cop26-block blockquote {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    #cop26-block blockquote footer {
+        padding: 0;
+        margin-top: 1rem;
+    }
+}

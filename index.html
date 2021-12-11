@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Un grau i mig - Home</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/estils.css">
+</head>
+
+<body>
+
+    <header id="cabecera">
+        <div id="logo-header">
+            <h3>NO HI HA PLANETA B</h3>
+            <h1><a href="./index.html">1,5 ºC</a></h1>
+        </div>
+        <nav>
+            <ul id="lista-menu">
+                <li><a href="simptomes.html">Símptomes del canvi climàtic</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="cop26.html">COP26</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="que-es">
+            <div id="heroe-block">
+                <img id="que-es-heroe" src="assets/images/bg-hero-home.jpg" alt="bosc en flames">
+                <h2 id="que-es-heroe-title">
+                    La crisi climàtica, una carrera que podem guanyar?
+                </h2>
+            </div>
+
+            <h3>
+                Què és Un grau i mig?
+            </h3>
+
+            <p>
+                L'acord de París de 2015 sobre el canvi climàtic exigeix que l’escalfament global es mantingui per sota
+                d'1,5 graus centígrads. S'està fent tot el que es pot al respecte?
+            </p>
+
+            <p>
+                A Un grau i mig estem preocupats pel canvi climàtic i des d'aquí us volem mantenir informats i atents a
+                les iniciatives d'acció climàtica.
+            </p>
+
+        </section>
+
+        <section id="noticies">
+            <h3>Notícies</h3>
+            <div id="news-block">
+                <article id="noticia-1">
+                    <figure>
+                        <img src="assets/images/n-greta-thunberg.jpg" alt="Greta Thunberg">
+                        <figcaption>14.11.2021</figcaption>
+                    </figure>
+                    <h4><a href="" class="news-title">Greta Thunberg lamenta l'acord de la COP26</a></h4>
+                    <p>Bla, bla, bla. Aquesta és la descripció que Greta Thunberg ha fet de l'acord que ha posat fi a la
+                        COP26 de Glasgow …</p>
+                    <a href="" class="read-more">Llegir-ne més</a>
+                </article>
+
+                <article id="noticia-2">
+                    <figure>
+                        <img src="assets/images/n-delhi.jpg" alt="Home a Nova delhi">
+                        <figcaption>13.11.2021</figcaption>
+                    </figure>
+                    <h4><a href="" class="news-title">L'estat indi de Delhi tanca escoles per la contaminació de
+                            l'aire</a>
+                    </h4>
+                    <p>El Govern ha ordenat el tancament d'escoles, ha paralitzat la construcció i ha decretat
+                        l'obligatorietat que els funcionaris treballin des de casa, degut a la contaminació de l'aire …
+                    </p>
+                    <a href="" class="read-more">Llegir-ne més</a>
+                </article>
+
+                <article id="noticia-3">
+                    <figure>
+                        <img src="assets/images/n-estres.jpg"
+                            alt="Porta desgastada amb vidre semitrasnparent sobre el que es projecte una silueta">
+                        <figcaption>07.10.2021</figcaption>
+                    </figure>
+                    <h4><a href="" class="news-title">L'ansietat climàtica: un problema de salut mental</a></h4>
+                    <p>Diversos estudis asseguren que l'escenari apocalíptic que augura el canvi climàtic causa estrès,
+                        sobretot en infants i adolescents …</p>
+                    <a href="" class="read-more">Llegir-ne més</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="subscripcio">
+            <h3>Subscriu-te al nostre butlletí de notícies</h3>
+            <form action="/subscripcio.php" method="post">
+                <div class="form-input">
+                    <input type="text" id="name" name="name" class="input-text" placeholder="Nom" required
+                        pattern="^[a-zA-Z][a-zA-Z-']{1,64}$">
+                </div>
+                <div class="form-input">
+                    <input type="email" id="email" name="email" class="input-text" placeholder="Correu electrònic"
+                        required>
+                </div>
+                <div>
+                    <p class="form-info">
+                        INFORMACIÓ SOBRE PROTECCIÓ DE DADES D’<span class="bold"> grau i mig.
+                            Finalitats</span>: recollida de dades per a l'enviament d'informació. <span
+                            class="bold">Legitimació</span>: Consentiment de
+                        l'interessat. <span class="bold">Destinataris</span>: No estan previstes cessions de dades a
+                        tercers, excepte obligació
+                        legal. <span class="bold">Drets</span>: Pot retirar el seu consentiment en qualsevol moment,
+                        així com accedir, rectificar,
+                        suprimir les seves dades i altres drets dirigint-se a <a class="text-link"
+                            href="mailto:info@ungrauimig.info?subject=Subscripcio">info@ungrauimig.info.</a> <span
+                            class="bold">Informació
+                            Addicional</span>: Pot ampliar la informació en l'enllaç <a class="text-link" href="">d'Avís
+                            legal</a> i <a class="text-link" href="">Política de
+                            privacitat.</a>
+                    </p>
+                    <div id="optin-block">
+                        <input type="checkbox" id="optin" name="optin">
+                        <label for="optin" class="optin">He llegit i accepto la política de privacitat</label>
+                    </div>
+                </div>
+                <button type="submit">
+                    Subscriu-me
+                </button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <ul id="footer-list">
+            <li><a href="">Sobre nosaltres</a></li>
+            <li><a href="">Avís legal</a></li>
+            <li><a href="">Política de privacitat</a></li>
+            <li><a href="">Política de cookies</a></li>
+        </ul>
+        <ul id="rrss-list">
+            <li><a href=""><img id="logo-twitter" src="assets/images/twitter.svg" alt="Logotip twitter"></a></li>
+            <li><a href=""><img id="logo-instagram" src="assets/images/instagram.svg" alt="Logotip instagram"></a></li>
+            <li><a href=""><img id="logo-youtube" src="assets/images/youtube.svg" alt="Logotip youtube"></a></li>
+        </ul>
+        <p>Activitat realitzada per Xavier Pol Sevilla, per a l'assignatura HTML
+            i CSS. Primer semestre del curs 2021-2022</p>
+    </footer>
+
+</body>
+
+</html>
